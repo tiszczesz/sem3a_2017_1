@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        
+    </head>
+    <body>
+        <div>
+            <h1>Ćwiczenie 2 pętle</h1>   
+            <h2>Pętla for</h2>
+            <script type="text/javascript">
+                for(var i=1;i<=6;i++){
+                    document.write("<h"+i+">Naglówek nr "+i+"</h"+i+">");
+                }
+                document.write("<ol>");
+                for(var i=1;i<=10;i++){
+                    document.write("<li>Element listy</li>");
+                }
+                document.write("</ol>");
+            </script>
+            <h2>Pętla while</h2>
+            <script type="text/javascript">
+                var suma=0;
+                while(suma<100){
+                    var losowa = Math.floor(Math.random()*20);
+                    suma += losowa;
+                    document.write(losowa+" ");
+                }
+                document.write("<br> suma = "+suma+"<br>");
+            </script>
+            <h2>Pętla do....while</h2>
+            <script type="text/javascript">
+                var losowa = 12;
+                var licznik = 0
+                do{
+                    losowa = Math.floor(Math.random()*20);
+                    if(losowa!=0) licznik++;
+                     document.write(losowa+" ");
+                }while(losowa!=0);
+                document.write("<br>Ilość losowań: "+licznik);
+            </script>
+        </div>
+    </body>
+</html>
