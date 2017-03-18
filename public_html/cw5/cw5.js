@@ -3,8 +3,7 @@ window.onload = start;
 function start(){
     document.getElementById("generuj").onclick = generuj;
 }
-function generuj(){
-    
+function generuj(){    
     var rows = parseInt(document.getElementById("rows").value);
     var cols = parseInt(document.getElementById("cols").value);
     if(isNaN(rows) || isNaN(cols)){
