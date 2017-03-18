@@ -1,4 +1,3 @@
-
 window.onload = start;
 
 function start(){
@@ -9,6 +8,8 @@ function start(){
    for(var i=0;i<pars.length;i++){
        if(i%2!=0){
            pars[i].style.backgroundColor = "yellow";
+       }else{
+           pars[i].style.border = "solid thin grey";
        }
    }
 }
