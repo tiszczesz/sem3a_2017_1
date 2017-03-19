@@ -41,7 +41,7 @@ function start(){
     document.getElementById("wyb2").onclick = kolory;
 }
 function kolory(){
-    console.log(this.value);
+   // console.log(this.value);
     document.body.style.backgroundColor = this.value;
 }
 function zmien(){
