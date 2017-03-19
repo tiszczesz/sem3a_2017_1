@@ -20,6 +20,13 @@ function getColors2(){
         ["purple","fioletowy"]
     ];
 }
+function generSelect(dane){
+    var html = "<select>";
+    //TODO
+    
+    
+    return html + "</select>";
+}
 function start(){
     var radios = document.getElementsByName("wybor");
     document.getElementsByTagName("p")[0].style.fontSize = "12px";
@@ -27,6 +34,8 @@ function start(){
     for(var i=0;i<radios.length;i++){
         radios[i].onclick = klik;
     }
+    var dane = getColors2();
+    document.getElementById("wynik").innerHTML = generSelect(dane);
 }
 function zmien(){
     document.getElementsByTagName("p")[0].style.fontSize = this.value;
