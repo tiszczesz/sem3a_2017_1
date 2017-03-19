@@ -17,14 +17,16 @@ function getColors2(){
         ["green","zielony"],
         ["yellow","zółty"],
         ["red","czerwony"],
-        ["purple","fioletowy"]
+        ["purple","fioletowy"],
+        ["black","czarny"]
     ];
 }
 function generSelect(dane){
-    var html = "<select>";
-    //TODO
-    
-    
+    var html = "<select id='wyb2'>";
+    for(var i=0;i<dane.length;i++){
+       html+= "<option value='"+dane[i][0]+"'>"
+               +dane[i][1]+"</option>"; 
+    } 
     return html + "</select>";
 }
 function start(){
@@ -36,6 +38,11 @@ function start(){
     }
     var dane = getColors2();
     document.getElementById("wynik").innerHTML = generSelect(dane);
+    document.getElementById("wyb2").onclick = kolory;
+}
+function kolory(){
+    console.log(this.value);
+    document.body.style.backgroundColor = this.value;
 }
 function zmien(){
     document.getElementsByTagName("p")[0].style.fontSize = this.value;
