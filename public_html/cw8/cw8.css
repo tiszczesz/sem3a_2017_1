@@ -1,0 +1,15 @@
+body{
+    margin: auto;
+    text-align: center;
+}
+table{
+    margin: auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+td{
+    border: solid thin blue;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
