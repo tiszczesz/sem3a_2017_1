@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <h1>Walidacja formularza</h1>
+            <form>
+                <fieldset>
+                    <legend>Dane osobowe</legend>
+                    <div class="line">
+                        <label>Imię:</label>
+                        <input type="text" id="imie"/>
+                        <span class="error"></span>
+                    </div>
+                    <div class="line">
+                        <label>Nazwisko:</label>
+                        <input type="text" id="nazwisko"/>
+                        <span class="error"></span>
+                    </div>
+                    <div class="line">
+                        <label>Klasa:</label>
+                        <select id="klasa">
+                            <option value="1A">1A</option>
+                            <option value="1B">1B</option>
+                            <option value="1C">1C</option>
+                            <option value="1D">1D</option>
+                        </select>                        
+                    </div>
+                    <div class="line">
+                        <label>Płeć:</label>
+                        Kobieta: <input type="radio" id="k" value="k" name="plec" checked=""/>
+                        Mężczyzna: <input type="radio" id="m" value="m" name="plec"/>                        
+                    </div>
+                    <div class="line">
+                        <label>Zainteresowania:</label><br>
+                        <label></label><input type="checkbox" id="z1" value="muzyka"/>muzyka<br>
+                        <label></label><input type="checkbox" id="z2" value="film"/>film<br>
+                        <label></label><input type="checkbox" id="z3" value="teatr"/>teatr<br>
+                        <label></label><input type="checkbox" id="z4" value="sport"/>sport<br>
+                       
+                    </div>
+                    <div class="line">
+                        <label></label>
+                        <input type="button" value="Zatwierdź" id="zatwierdz"/>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>
